@@ -314,12 +314,3 @@ s3migration dry-run \
     --role arn:aws:iam::111111111111:role/S3BatchCopyAdmin \
     --sourcebucket alb-access-logs-111111111111-us-east-1
 ```
-
-## Enhancements
-
-The following enhancements are planned but not yet implemented:
-
-* Dry-Run will check for valid bucket policy on source bucket
-* Run and Dry-Run output will include specific error codes that will be referenced in runbook
-* For versioned buckets, execute the copy as sequential jobs to ensure that latest version in source is latest version in destination
-* Create a Destination-Dry-Run that performs destination-specific checks (bucket existence w/ valid bucket policy)
